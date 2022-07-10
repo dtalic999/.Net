@@ -4,6 +4,10 @@ export interface IBasket
 {
     id: string;
     items: IBasketItem[];
+    clientSecret?: string;
+    paymentId?: string;
+    deliveryMethodId?: number;
+    shippingPrice?: number;
 }
 
 export interface IBasketItem

@@ -6,11 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
-    public class BaasketController : BaseApiController
+    public class BasketController : BaseApiController
     {
         private readonly IBasketRepository basketRepository;
         private readonly IMapper mapper;
-        public BaasketController(IBasketRepository basketRepository, IMapper mapper)
+        public BasketController(IBasketRepository basketRepository, IMapper mapper)
         {
             this.mapper = mapper;
             this.basketRepository = basketRepository;
